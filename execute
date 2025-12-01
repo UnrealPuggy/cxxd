@@ -3,5 +3,5 @@ if  [ ! -d "run" ]; then
     mkdir run
 fi
 cd run
-../main.exe $*
+../bin/main.exe $*
 cd ..
