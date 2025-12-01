@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ ! -d bin ]; then
+    mkdir bin
+fi
+# Example (64-bit cross-compile with mingw-w64)
+x86_64-w64-mingw32-g++ \
+ -static-libstdc++ \
+  src/*.cpp -o bin/main.exe
